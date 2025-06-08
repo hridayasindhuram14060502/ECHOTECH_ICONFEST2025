@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - EchoTech</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png"/>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- css -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header" id="header">
+        <nav class="nav  mx-auto w-5/6">
+
+            <a href="index.html" class="nav__logo"><img src="img/logonav.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <span class="active">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="events.html" class="nav__link">
+                            <span>Events</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contactus.html" class="nav__link">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="marketplace.html" class="nav__link">
+                            <span>Marketplace</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__tcta">
+                <div class="buttoncta">
+                    <a href="login.html" class="nav__linkk">
+                        <span class="btv">
+                            Login
+                        <span>
+                    </a>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    
+    <!-- hero -->
+    <section class="h-screen bg-cover bg-center relative" style="background-image: url('img/bghero.png');">   
+        <div class="mx-auto w-5/6 
+            grid 
+            grid-cols-1
+            xl:grid-cols-5 
+            xl:grid-rows-6 
+            gap-x-4 gap-y-10
+            h-auto lg:h-screen 
+            text-white 
+            pt-[100px] xl:pt-[50px]">
+
+            <div class="kiri 
+                xl:col-span-2 
+                xl:row-span-2 
+                xl:row-start-2 
+                flex items-center justify-center xl:items-start xl:justify-start">
+                <div class="space-y-5 text-center xl:text-justify">
+                    <h1 class="text-3xl md:text-6xl font-bold leading-tight text-center md:text-start">
+                        Explore <br>Beyond the <span class="text-indigo-400">Ordinary</span>
+                    </h1>
+                    <p class="text-sm sm:text-xl text-gray-300 max-w-9/10 text-center md:text-start">
+                        Experience the next evolution of VR powered by sustainable innovation. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="kanan 
+            xl:col-span-2 
+            xl:row-span-2 
+            xl:col-start-4 
+            xl:row-start-2 
+            flex flex-col items-center xl:items-end justify-start space-y-3 text-center xl:text-center">
+                <div class="relative w-32 sm:w-40 lg:w-48 mx-auto xl:mx-0">
+                    <div class="absolute inset-0 rounded-full blur-2xl opacity-40 scale-110 z-0 animate-[glowPulse_4s_ease-in-out_infinite] bg-indigo-950 -ml-[20px] xl:-ml-[180px]"></div>
+                    <img src="img/vrhero.png" alt="VR Headset"
+                        class="relative w-full scale-75 drop-shadow-2xl z-10 animate-[floatY_3s_ease-in-out_infinite] -ml-0 xl:-ml-[95px]">
+                </div>
+                <div class="space-y-1 mt-2">
+                    <h3 class="text-3xl sm:text-4xl font-body">Unlock a New Dimension</h3>
+                    <p class="text-sm text-gray-300">Redefine reality with eco-friendly VR devices.</p>
+                </div>
+            </div>
+
+            <div class="kiri mt-0 md:-mt-10
+            xl:col-span-1 
+            xl:row-span-2 
+            xl:row-start-5 
+            flex items-center justify-center xl:justify-start text-center xl:text-left">
+                <div class="space-y-1">
+                    <img src="img/prf.png" alt="User Icon" class="w-16 sm:w-32 mx-auto xl:mx-0">
+                    <h3 class="text-3xl sm:text-4xl font-body">15k Users</h3>
+                    <p class="text-sm text-gray-300">Trusted by thousands of future-forward minds.</p>
+                </div>
+            </div>
+
+            <div class="kanan
+            xl:col-span-2 
+            xl:row-span-2 
+            xl:col-start-4 
+            xl:row-start-5 
+            flex items-center justify-center xl:justify-end text-center xl:text-right">
+                <div class="space-y-1">
+                    <p class="text-sm sm:text-base text-gray-300">Ready to enter a new reality?</p>
+                    <a href="marketplace.html"
+                        class="inline-flex items-center text-indigo-400 hover:text-indigo-500 font-medium transition-all duration-200 group">
+                        Get Started
+                        <i class="fa-solid fa-arrow-right ml-2 transition-transform duration-200 group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why us -->
+    <section class="mx-auto w-5/6 mt-[145px] text-white">
+        <div class="max-w-6xl mx-auto text-center space-y-6">
+            <h1 class="atas text-white text-2xl md:text-4xl font-display">Why Choose <span class="text-indigo-400">EchoTech?</span></h1>
+            <p class="atas text-white mt-4 text-base md:text-lg font-body">
+            Discover why thousands trust EchoTech for a smarter, cleaner virtual experience.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
+                <div class="kiri relative group h-[200px] overflow-hidden rounded-lg border-2 border-indigo-900 shadow-md p-6 hover:shadow-xl transition">
+                    <img 
+                        src="img/why1.png"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-black/80 flex flex-col items-center justify-end text-center p-4 transition-opacity duration-500 group-hover:bg-black/40 text-indigo-500">
+                        <i class="fas fa-recycle text-3xl"></i>
+                        <h3 class="text-xl font-body text-white mt-2">Responsible Technology</h3>
+                        <p class="text-sm text-gray-300 max-w-xs mt-1">
+                        Energy-efficient and built to last — reducing waste and carbon footprint.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bawah relative group h-[200px] overflow-hidden rounded-lg border-2 border-indigo-900 shadow-md p-6 hover:shadow-xl transition">
+                    <img 
+                        src="img/why2.png"
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-black/80 flex flex-col items-center justify-end text-center p-4 transition-opacity duration-500 group-hover:bg-black/40 text-indigo-500">
+                        <i class="fas fa-hand-pointer text-3xl"></i>
+                        <h3 class="text-xl font-body text-white mt-2">Simple & Easy to Use</h3>
+                        <p class="text-sm text-gray-300 max-w-xs mt-1">
+                        Intuitive controls that let you dive into VR effortlessly.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="kanan relative group h-[200px] overflow-hidden rounded-lg border-2 border-indigo-900 shadow-md p-6 hover:shadow-xl transition">
+                    <img 
+                        src="img/why3.png" 
+                        class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-black/80 flex flex-col items-center justify-end text-center p-4 transition-opacity duration-500 group-hover:bg-black/40 text-indigo-500">
+                        <i class="fas fa-users text-indigo-400 text-3xl"></i>
+                        <h3 class="text-xl font-body text-white mt-2">Future-Focused Community</h3>
+                        <p class="text-sm text-gray-300 max-w-xs mt-1">
+                        A global movement for sustainable tech, powered by people like you.
+                        </p>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="bawah mt-10">
+            <a href="about.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                Learn More About Us
+                <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+            </a>
+            </div>
+        </div>
+    </section>
+    <!-- events -->
+    <section class="h-auto bg-cover bg-center relative" style="background-image: url('img/bg2.png');">
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black via-black/1 to-transparent z-0"></div>
+        <section class="mx-auto w-5/6 mt-[145px]">
+            <div class="">
+                <div class="flex flex-col lg:flex-row gap-8 items-center lg:items-start justify-center lg:justify-between">
+
+                    <div class="kiri text-white text-center lg:text-left mb-2 lg:mb-0 mt-0 lg:mt-5">
+                        <h1 class="atas text-white text-2xl md:text-4xl font-display">Featured Events</h1>
+                        <p class="atas text-white mt-4 text-base md:text-lg font-body">Explore our most exciting and impactful VR experiences — handpicked for innovation, popularity, and unforgettable moments.</p>
+                        <a href="events.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group mt-5">
+                            View More
+                            <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                        <div class="featured-buttons flex justify-center lg:justify-start gap-4">
+                            <div class="swiper-button-prev cursor-pointer text-2xl hover:text-indigo-500 border-b-2 border-indigo-900 transition">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                            <div class="swiper-button-next cursor-pointer text-2xl hover:text-indigo-500 border-b-2 border-indigo-900 transition">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kanan sliderr w-full lg:w-2/3">
+                        <div class="swiper mySwiper">
+                            <div class="swiper- campaignSwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide flex justify-center p-4">
+                                        <div class="border-2 border-indigo-900 bg-black rounded-2xl shadow-md max-w-sm w-full overflow-hidden">
+                                            <div class="overflow-hidden h-48 w-full border-b-2 border-indigo-900 rounded-t-2xl">
+                                            <img src="img/fea1.jpeg" class="h-full w-full object-cover transition-transform duration-300 transform hover:scale-110" />
+                                            </div>
+                                            <div class="p-5 space-y-3">
+                                                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR for Modern Education</h2>
+                                                <p class="text-gray-400 text-sm line-clamp-2">Discover how VR is shaping the future of learning in this interactive webinar.</p>
+                                                <div class="border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                                                    <p class="text-white text-sm">Free Entry</p>
+                                                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                                                        Details
+                                                        <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide flex justify-center p-4">
+                                        <div class="border-2 border-indigo-900 bg-black rounded-2xl shadow-md max-w-sm w-full overflow-hidden">
+                                            <div class="overflow-hidden h-48 w-full border-b-2 border-indigo-900 rounded-t-2xl">
+                                            <img src="img/fea2.jpg" class="h-full w-full object-cover transition-transform duration-300 transform hover:scale-110" />
+                                            </div>
+                                            <div class="p-5 space-y-3">
+                                                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Intro to VR Development</h2>
+                                                <p class="text-gray-400 text-sm line-clamp-2">Learn the basics of building immersive VR apps — beginner-friendly workshop.</p>
+                                                <div class="border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                                                    <p class="text-white text-sm">Seats Limited</p>
+                                                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                                                        Details
+                                                        <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide flex justify-center p-4">
+                                        <div class="border-2 border-indigo-900 bg-black rounded-2xl shadow-md max-w-sm w-full overflow-hidden">
+                                            <div class="overflow-hidden h-48 w-full border-b-2 border-indigo-900 rounded-t-2xl">
+                                            <img src="img/why3.png" class="h-full w-full object-cover transition-transform duration-300 transform hover:scale-110" />
+                                            </div>
+                                            <div class="p-5 space-y-3">
+                                                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Future Tech Expo 2025</h2>
+                                                <p class="text-gray-400 text-sm line-clamp-2">Step into tomorrow with the latest breakthroughs in VR and sustainable tech.</p>
+                                                <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                                                    <p class="text-white text-sm">Starts June 20</p>
+                                                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                                                        Details
+                                                        <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide flex justify-center p-4">
+                                        <div class="border-2 border-indigo-900 bg-black rounded-2xl shadow-md max-w-sm w-full overflow-hidden">
+                                            <div class="overflow-hidden h-48 w-full border-b-2 border-indigo-900 rounded-t-2xl">
+                                            <img src="img/fea4.png" class="h-full w-full object-cover transition-transform duration-300 transform hover:scale-110" />
+                                            </div>
+                                            <div class="p-5 space-y-3">
+                                                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Art Showcase Live</h2>
+                                                <p class="text-gray-400 text-sm line-clamp-2">Explore immersive digital art and meet creators blending creativity with code.</p>
+                                                <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                                                    <p class="text-white text-sm">Open Gallery</p>
+                                                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                                                        Details
+                                                        <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide flex justify-center p-4">
+                                        <div class="border-2 border-indigo-900 bg-black rounded-2xl shadow-md max-w-sm w-full overflow-hidden">
+                                            <div class="overflow-hidden h-48 w-full border-b-2 border-indigo-900 rounded-t-2xl">
+                                            <img src="img/fea5.png" class="h-full w-full object-cover transition-transform duration-300 transform hover:scale-110" />
+                                            </div>
+                                            <div class="p-5 space-y-3">
+                                                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Tech for Good: Echo x GreenWave</h2>
+                                                <p class="text-gray-400 text-sm line-clamp-2">A joint mission to create meaningful impact using green VR tech.</p>
+                                                <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                                                    <p class="text-white text-sm">Limited Tickets</p>
+                                                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                                                        Details
+                                                        <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- video -->
+    <section class="w-5/6 mx-auto mt-5 lg:mt-[145px]">
+        <div class="zoom relative w-full h-[50vh] rounded-3xl overflow-hidden shadow-xl">
+            <video 
+            class="absolute top-0 left-0 w-full h-full object-cover"
+            src="img/videohome.mp4" 
+            autoplay 
+            muted 
+            playsinline 
+            loop 
+            oncontextmenu="return false;" 
+            controlslist="nodownload nofullscreen noremoteplayback" 
+            disablepictureinpicture
+            ></video>
+        </div>
+    </section>
+    <!-- faqs -->
+    <section class="h-auto bg-cover bg-center relative" style="background-image: url('img/bg3.png');">
+    <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-black via-black/0 to-transparent z-0"></div>
+        <section class="mx-auto w-5/6 mt-10 lg:mt-[145px] text-white" id="faq">
+            <div class="kiri w-full flex flex-col lg:flex-row gap-16">
+                <div class="w-full lg:w-1/2">
+                    <h3 class="text-center lg:text-start text-indigo-400 text-lg sm:text-xl tracking-wider mb-1 lg:mb-2 font-body">FAQs</h3>
+                    <h1 class="text-center lg:text-start text-white text-2xl md:text-4xl font-display">Frequently Asked Questions</h1>
+                    <p class="text-center lg:text-start text-white mt-1 lg:mt-4 text-base md:text-lg font-body">
+                    Get quick answers about EchoTech’s mission, products, and how you can be part of a greener, smarter future through VR.
+                    </p>
+                </div>
+
+                <div class="kanan w-full lg:w-1/2 grid gap-6 sm:gap-8">
+
+                    <div class="grid pb-4 border-b border-indigo-300/40">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="font-body text-lg sm:text-xl font-bold tracking-wider">What makes EchoTech VR devices eco-friendly?</h3>
+                            <button class="faq-button border-2 border-indigo-400 rounded-full p-2" data-faq="1">
+                            <i class="fa-solid fa-plus text-indigo-400 text-lg"></i>
+                            </button>
+                        </div>
+                        <div class="faq__answer answer-1 max-w-full overflow-y-hidden max-h-0 transition-all duration-400">
+                            <p class="text-gray-300 text-sm sm:text-base pt-3 pr-2">
+                            Our devices are made from recycled materials and use energy-efficient components to reduce power consumption without sacrificing performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid pb-4 border-b border-indigo-300/40">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="font-body text-lg sm:text-xl font-bold tracking-wider">Do I need a PC or console to use EchoTech VR?</h3>
+                            <button class="faq-button border-2 border-indigo-400 rounded-full p-2" data-faq="2">
+                            <i class="fa-solid fa-plus text-indigo-400 text-lg"></i>
+                            </button>
+                        </div>
+                        <div class="faq__answer answer-2 max-w-full overflow-y-hidden max-h-0 transition-all duration-400">
+                            <p class="text-gray-300 text-sm sm:text-base pt-3 pr-2">
+                            No. EchoTech VR works as a standalone device, making it portable and easy to use—no extra hardware required.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid pb-4 border-b border-indigo-300/40">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="font-body text-lg sm:text-xl font-bold tracking-wider">Where can I buy EchoTech products?</h3>
+                            <button class="faq-button border-2 border-indigo-400 rounded-full p-2" data-faq="3">
+                            <i class="fa-solid fa-plus text-indigo-400 text-lg"></i>
+                            </button>
+                        </div>
+                        <div class="faq__answer answer-3 max-w-full overflow-y-hidden max-h-0 transition-all duration-400">
+                            <p class="text-gray-300 text-sm sm:text-base pt-3 pr-2">
+                            You can purchase directly from our official website or visit our partnered resellers listed in the “Marketplace” page.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid pb-4 border-b border-indigo-300/40">
+                        <div class="flex justify-between items-start gap-4">
+                            <h3 class="font-body text-lg sm:text-xl font-bold tracking-wider">Can I try EchoTech before buying?</h3>
+                            <button class="faq-button border-2 border-indigo-400 rounded-full p-2" data-faq="4">
+                            <i class="fa-solid fa-plus text-indigo-400 text-lg"></i>
+                            </button>
+                        </div>
+                        <div class="faq__answer answer-4 max-w-full overflow-y-hidden max-h-0 transition-all duration-400">
+                            <p class="text-gray-300 text-sm sm:text-base pt-3 pr-2">
+                            Yes! Visit our demo booths at select exhibitions or try a virtual demo through our app. Stay tuned on our Events page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- reviews -->
+    <section class="mx-auto w-5/6 md:mt-[145px] mt-10">
+        <div class="atas text-center flex flex-col items-center justify-center mb-8">
+            <h1 class="w-3/4 text-white sm:mt-0 mt-[70px] text-2xl md:text-4xl font-display">
+            What Our <span class="text-indigo-400">Users</span> Say
+            </h1>
+            <p class="w-5/6 sm:w-3/4 text-white mt-4 text-base md:text-lg font-body">
+            Honest feedback from our EchoTech community.
+            </p>
+        </div>
+
+        <div class="sliderrrr" reverse="true" style="
+            --width:300px; 
+            --height:150px;
+            --quantity:7;
+            ">
+            <div class="list">
+                <div class="items" style="--position: 1">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf1.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Bright</p>
+                                        <p class="text-sm text-gray-400">18 APR 2023</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            The VR headset is mind-blowing. Totally immersive experience!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 2">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf2.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Jessica M.</p>
+                                        <p class="text-sm text-gray-400">18 APR 2024</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Super smooth checkout and fast delivery. Love the design!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 3">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf3.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Daniel R.</p>
+                                        <p class="text-sm text-gray-400">1 JAN 2025</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Everything feels intuitive. Best tech shopping site so far.
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 4">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf4.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Sophia L.</p>
+                                        <p class="text-sm text-gray-400">1 MAY 2022</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Bought a smart wearable and it works perfectly. Thank you!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 5">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf5.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Marcus T.</p>
+                                        <p class="text-sm text-gray-400">1 SEP 2024</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            The eco-tech concept is brilliant. I’m all in!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 6">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf6.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Olivia K.</p>
+                                        <p class="text-sm text-gray-400">15 JUN 2023</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Got my order faster than expected. Great service!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 7">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf7.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Ethan C.</p>
+                                        <p class="text-sm text-gray-400">18 APR 2025</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            EchoTech just makes futuristic tech feel simple and fun.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <div class="sliderrrr mt-5" style="
+            --width:300px; 
+            --height:150px;
+            --quantity:7;
+            ">
+            <div class="list">
+                <div class="items" style="--position: 1">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf1.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Bright</p>
+                                        <p class="text-sm text-gray-400">18 APR 2023</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            The VR headset is mind-blowing. Totally immersive experience!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 2">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf2.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Jessica M.</p>
+                                        <p class="text-sm text-gray-400">18 APR 2024</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Super smooth checkout and fast delivery. Love the design!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 3">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf3.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Daniel R.</p>
+                                        <p class="text-sm text-gray-400">1 JAN 2025</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Everything feels intuitive. Best tech shopping site so far.
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 4">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf4.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Sophia L.</p>
+                                        <p class="text-sm text-gray-400">1 MAY 2022</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Bought a smart wearable and it works perfectly. Thank you!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 5">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf5.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Marcus T.</p>
+                                        <p class="text-sm text-gray-400">1 SEP 2024</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            The eco-tech concept is brilliant. I’m all in!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 6">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf6.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Olivia K.</p>
+                                        <p class="text-sm text-gray-400">15 JUN 2023</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            Got my order faster than expected. Great service!
+                        </p>
+                    </div>
+                </div> 
+                <div class="items" style="--position: 7">
+                    <div class="max-w-md bg-black border-2 border-indigo-900 rounded-lg shadow-md p-5 space-y-4">
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <img src="img/prf7.jpg" alt="" style="max-width:35px; border-radius:50%;">
+                                    <div>
+                                        <p class="font-semibold text-gray-100">Ethan C.</p>
+                                        <p class="text-sm text-gray-400">18 APR 2025</p>
+                                    </div>
+                            </div>
+                            <div class="flex space-x-1 text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star text-gray-300"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 text-sm">
+                            EchoTech just makes futuristic tech feel simple and fun.
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- cta -->
+    <section class="mx-auto w-5/6 md:mt-[145px] mt-10 text-white text-center">
+        <h1 class="atas text-2xl md:text-4xl font-display mb-4">
+            Still Confused? Let’s Talk!
+        </h2>
+        <p class="atas text-base md:text-lg max-w-xl mx-auto mb-6">
+            The EchoTech team is ready to help you — from product questions, shopping guidance, to advice on sustainable tech solutions.
+        </p>
+        <a href="contactus.html" class="atas inline-block bg-indigo-500 hover:bg-indigo-950 text-white font-semibold py-3 px-6 rounded transition duration-300">
+            Contact Us
+        </a>
+    </section>
+    <!-- button -->
+    <button id="toTopBtn"
+    class="fixed bottom-6 right-6 z-50 p-3 sm:p-4 bg-black/40 backdrop-blur-md border border-indigo-600
+            text-indigo-300 hover:text-white rounded-full shadow-md 
+            opacity-0 scale-90 translate-y-4 pointer-events-none transition-all duration-500 ease-in-out group"
+    aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up text-lg transition-transform duration-300 group-hover:-translate-y-1"></i>
+    </button>
+
+    <footer class="relative w-full bg-black text-gray-300 md:mt-[145px] mt-10 pb-8">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
+            style="background-image: url('img/footer.jpg'); z-index: 0;">
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-75 z-0"></div>
+        <div class="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent z-10"></div>
+
+        <div class="relative mx-auto w-5/6 mt-12 z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+            <div class="flex flex-col items-start">
+                <h2 class="text-xl font-bold text-white mb-4 ms-0 sm:ms-4">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logonav.png" alt="EchoTech Logo" class="w-48 h-auto">
+                </a>
+                </h2>
+                <p class="text-sm sm:text-base">
+                EchoTech is your gateway to sustainable future tech. Discover cutting-edge VR products built for a smarter and greener tomorrow.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Explore</h3>
+                <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-indigo-400 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-indigo-400 transition">About</a></li>
+                <li><a href="events.html" class="hover:text-indigo-400 transition">Events</a></li>
+                <li><a href="contactus.html" class="hover:text-indigo-400 transition">Contact Us</a></li>
+                <li><a href="marketplace.html" class="hover:text-indigo-400 transition">Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+                <p class="text-sm sm:text-base text-gray-300">
+                Subscribe to receive updates on our latest VR innovations and eco-tech campaigns.
+                </p>
+                <form class="mt-4">
+                <input type="email" placeholder="Your email address" required
+                    class="w-full p-2 border border-gray-600 bg-white text-black rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base" />
+                <button type="submit"
+                    class="w-full bg-indigo-500 hover:bg-indigo-950 transition-all text-white p-2 rounded mt-1 text-sm sm:text-base font-semibold">
+                    Subscribe
+                </button>
+                </form>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                <div class="flex space-x-4 text-2xl">
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 EchoTech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

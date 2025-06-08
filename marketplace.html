@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marketplace - EchoTech</title>
+  <link rel="icon" type="image/x-icon" href="img/logo.png" />
+
+  <!-- font awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="marketplace.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'dark': '#0f0f0f',
+          'dark-secondary': '#1a1a1a',
+          'dark-tertiary': '#262626',
+          'indigo': {
+            500: '#6366f1',
+            600: '#4f46e5',
+            700: '#4338ca',
+            800: '#3730a3',
+            900: '#312e81'
+          }
+        },
+        fontFamily: {
+          'sans': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          'orbitron': ['Orbitron', 'sans-serif'],
+          'syne': ['Syne', 'sans-serif'],
+          'inter': ['Inter', 'sans-serif']
+        }
+      }
+    },
+    darkMode: 'class'
+  }
+</script>
+  <style>
+    .hero iframe {
+      border-radius: 0.75rem;
+    }
+  </style>
+</head>
+<body class="text-white font-inter">
+
+<!-- header -->
+<header class="header" id="header">
+  <nav class="nav  mx-auto w-5/6">
+
+    <a href="index.html" class="nav__logo"><img src="img/logonav.png" alt=""></a>
+
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">
+              <span>Home</span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="about.html" class="nav__link">
+              <span>About</span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="events.html" class="nav__link">
+              <span>Events</span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="contactus.html" class="nav__link">
+              <span>Contact Us</span>
+          </a>
+        </li>
+
+        <li class="nav__item">
+          <a href="marketplace.html" class="nav__link">
+              <span class="active">Marketplace</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav__close" id="nav-close">
+          <i class="fa-solid fa-x"></i>
+      </div>
+    </div>
+
+    <div class="nav__tcta">
+                <div class="buttoncta">
+                    <a href="login.html" class="nav__linkk">
+                        <span class="btv">
+                            Login
+                        <span>
+                    </a>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+    </div>
+
+  </nav>
+</header>
+  
+<!-- video -->
+<section class="">
+    <div class="relative w-full h-[60vh] overflow-hidden shadow-xl">
+        <video 
+        class="absolute top-0 left-0 w-full h-full object-cover"
+        src="img/video.mp4" 
+        autoplay 
+        muted 
+        playsinline 
+        loop 
+        oncontextmenu="return false;" 
+        controlslist="nodownload nofullscreen noremoteplayback" 
+        disablepictureinpicture
+        ></video>
+        <div class="absolute top-0 left-0 w-full h-full z-0 
+          bg-gradient-to-b from-black/80 via-black/40 to-black/10
+          flex items-center justify-center">
+          <h1 class="atas text-3xl sm:text-6xl font-bold text-white drop-shadow-[0_3px_8px_rgba(0,0,0,0.8)]">
+            Marketplace
+          </h1>
+        </div>
+
+    </div>
+</section>
+
+  <!-- Search and Filter -->
+  <section class="search-section">
+    <div class="container w-5/6 mx-auto px-4">
+      <div class="search-filter-container">
+  <div class="search-section-left">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search products..." class="search-input" />
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="filter-section-right">
+    <div class="filter-grid">
+      <button data-category="all" class="filter-btn active">All</button>
+      <button data-category="aksesoris" class="filter-btn">Aksesoris</button>
+      <button data-category="controller" class="filter-btn">Controller</button>
+      <button data-category="vr" class="filter-btn">VR</button>
+      <button id="cart-button-filter" class="cart-button-filter">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 6M7 13l-1.5 6m0 0h9"></path>
+        </svg>
+        <span>Cart</span>
+        <span id="cart-count-filter" class="cart-count-filter">0</span>
+      </button>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section py-16">
+    <div class="container w-5/6 mx-auto px-4">
+      <h2 class="section-title text-center text-3xl font-bold text-white mb-10 font-orbitron">Products</h2>
+      <div id="products-grid" class="products-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- Products will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-content z-100">
+      <div class="cart-header flex justify-between items-center mb-6">
+        <h3 class="cart-title text-xl font-bold text-white font-syne">Your Cart</h3>
+        <button id="close-cart" class="close-button text-gray-400 hover:text-white">
+          <svg class="icon w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div id="cart-summary" class="cart-summary mt-4"></div>
+    </div>
+  </div>
+
+  <!-- Payment Container -->
+  <div id="payment-container" class="payment-container hidden mt-[50px] lg:mt-[83px]">
+    <div class="container w-5/6 mx-auto">
+      <div class="payment-header">
+        <button id="back-to-shop" class="back-button">
+          <svg class="icon w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <h1 class="payment-title font-orbitron">Checkout</h1>
+      </div>
+
+      <div class="payment-layout">
+        <div class="payment-section">
+          <div class="payment-card">
+            <div class="card-header">
+              <h2 class="card-title font-syne">Payment Method</h2>
+            </div>
+            <div class="card-body">
+              <div class="payment-methods">
+                <label class="payment-method active">
+                  <input type="radio" name="payment" value="card" checked class="sr-only">
+                  <div class="method-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                      <line x1="1" y1="10" x2="23" y2="10"></line>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-title font-syne">Credit Card</div>
+                    <div class="method-subtitle font-inter">Visa, Mastercard, American Express</div>
+                  </div>
+                  <div class="radio-indicator">
+                    <div class="indicator-dot"></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="paypal" class="sr-only">
+                  <div class="method-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M7 13l3 3 7-7"></path>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-title font-syne">PayPal</div>
+                    <div class="method-subtitle font-inter">Pay with your PayPal account</div>
+                  </div>
+                  <div class="radio-indicator">
+                    <div class="indicator-dot"></div>
+                  </div>
+                </label>
+
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="bank" class="sr-only">
+                  <div class="method-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    </svg>
+                  </div>
+                  <div class="method-info">
+                    <div class="method-title font-syne">Bank Transfer</div>
+                    <div class="method-subtitle font-inter">Direct bank transfer</div>
+                  </div>
+                  <div class="radio-indicator">
+                    <div class="indicator-dot"></div>
+                  </div>
+                </label>
+              </div>
+
+              <div id="card-details" class="card-details mt-6">
+                <div class="credit-card">
+                  <div class="card-top">
+                    <div class="card-label font-inter">Card Number</div>
+                    <div class="card-brand font-orbitron">VISA</div>
+                  </div>
+                  <div id="display-card-number" class="card-number font-inter">0000 0000 0000 0000</div>
+                  <div class="card-bottom">
+                    <div>
+                      <div class="card-label-small font-inter">VALID THRU</div>
+                      <div id="display-expiry" class="card-expiry font-inter">MM/YY</div>
+                    </div>
+                    <div>
+                      <div class="card-label-small font-inter">CARDHOLDER</div>
+                      <div id="display-name" class="card-holder font-inter">YOUR NAME</div>
+                    </div>
+                  </div>
+                </div>
+
+                <form id="payment-form" class="payment-form">
+                  <div class="form-group">
+                    <label class="form-label font-syne">Card Number</label>
+                    <input type="text" id="card-number" class="form-input font-inter" placeholder="0000 0000 0000 0000" maxlength="19">
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label class="form-label font-syne">Expiry Date</label>
+                      <input type="text" id="expiry-date" class="form-input font-inter" placeholder="MM/YY" maxlength="5">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label font-syne">CVV</label>
+                      <input type="text" id="cvv" class="form-input font-inter" placeholder="123" maxlength="4">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label font-syne">Cardholder Name</label>
+                    <input type="text" id="cardholder-name" class="form-input font-inter" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label font-syne">Email</label>
+                    <input type="text" id="cardholder-name" class="form-input font-inter" placeholder="Your Email">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="security-notice">
+            <svg class="icon text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M9 12l2 2 4-4"></path>
+              <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"></path>
+              <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"></path>
+            </svg>
+            <span class="font-inter">Your payment information is secure and encrypted</span>
+          </div>
+
+          <button id="complete-payment" class="complete-payment-btn mt-6 font-syne">
+            Complete Payment
+          </button>
+        </div>
+
+        <div class="order-summary-section">
+          <div class="payment-card">
+            <div class="card-header">
+              <h2 class="card-title font-syne">Order Summary</h2>
+            </div>
+            <div class="card-body">
+              <div id="order-items" class="order-items"></div>
+              <div class="separator"></div>
+              <div id="order-summary" class="order-summary"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Animation -->
+  <div id="success-animation" class="success-animation">
+    <div class="success-checkmark">
+      <svg class="check-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="3">
+        <path d="M20 6L9 17l-5-5" />
+      </svg>
+    </div>
+    <h2 class="success-title font-orbitron">Payment Successful!</h2>
+    <p class="success-message font-inter">Your transaction has been processed successfully.</p>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup-modal">
+      <div class="popup-header text-center mb-4">
+        <div id="popup-icon" class="popup-icon"></div>
+        <h3 id="popup-title" class="popup-title text-xl font-semibold text-white font-syne">Title</h3>
+      </div>
+      <div class="popup-content text-center mb-6">
+        <p id="popup-message" class="popup-message text-gray-400 font-inter">Message content</p>
+      </div>
+      <div id="popup-actions" class="popup-actions flex justify-center gap-4">
+        <button id="popup-cancel" class="popup-btn popup-btn-secondary font-syne">Cancel</button>
+        <button id="popup-confirm" class="popup-btn popup-btn-primary font-syne">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- button to top -->
+  <button id="toTopBtn"
+  class="fixed bottom-6 right-6 z-50 p-3 sm:p-4 bg-black/40 backdrop-blur-md border border-indigo-600
+          text-indigo-300 hover:text-white rounded-full shadow-md 
+          opacity-0 scale-90 translate-y-4 pointer-events-none transition-all duration-500 ease-in-out group"
+  aria-label="Scroll to top">
+  <i class="fa-solid fa-arrow-up text-lg transition-transform duration-300 group-hover:-translate-y-1"></i>
+  </button>
+
+  <!-- footer -->
+  <footer class="relative w-full bg-black text-gray-300 md:mt-[145px] mt-10 pb-8">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
+            style="background-image: url('img/footer.jpg'); z-index: 0;">
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-75 z-0"></div>
+        <div class="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent z-10"></div>
+
+        <div class="relative mx-auto w-5/6 mt-12 z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+            <div class="flex flex-col items-start">
+                <h2 class="text-xl font-bold text-white mb-4 ms-0 sm:ms-4">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logonav.png" alt="EchoTech Logo" class="w-48 h-auto">
+                </a>
+                </h2>
+                <p class="text-sm sm:text-base">
+                EchoTech is your gateway to sustainable future tech. Discover cutting-edge VR products built for a smarter and greener tomorrow.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Explore</h3>
+                <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-indigo-400 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-indigo-400 transition">About</a></li>
+                <li><a href="events.html" class="hover:text-indigo-400 transition">Events</a></li>
+                <li><a href="contactus.html" class="hover:text-indigo-400 transition">Contact Us</a></li>
+                <li><a href="marketplace.html" class="hover:text-indigo-400 transition">Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+                <p class="text-sm sm:text-base text-gray-300">
+                Subscribe to receive updates on our latest VR innovations and eco-tech campaigns.
+                </p>
+                <form class="mt-4">
+                <input type="email" placeholder="Your email address" required
+                    class="w-full p-2 border border-gray-600 bg-white text-black rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base" />
+                <button type="submit"
+                    class="w-full bg-indigo-500 hover:bg-indigo-950 transition-all text-white p-2 rounded mt-1 text-sm sm:text-base font-semibold">
+                    Subscribe
+                </button>
+                </form>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                <div class="flex space-x-4 text-2xl">
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 EchoTech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="marketplace.js"></script>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toTopBtn = document.getElementById("toTopBtn");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            toTopBtn.classList.remove(
+            "opacity-0",
+            "scale-90",
+            "translate-y-4",
+            "pointer-events-none"
+            );
+        } else {
+            toTopBtn.classList.add(
+            "opacity-0",
+            "scale-90",
+            "translate-y-4",
+            "pointer-events-none"
+            );
+        }
+        });
+
+        toTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+  </script>
+</body>
+</html>

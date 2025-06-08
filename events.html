@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - EchoTech</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- css -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header" id="header">
+        <nav class="nav  mx-auto w-5/6">
+
+            <a href="index.html" class="nav__logo"><img src="img/logonav.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="events.html" class="nav__link">
+                            <span class="active">Events</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contactus.html" class="nav__link">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="marketplace.html" class="nav__link">
+                            <span>Marketplace</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__tcta">
+                <div class="buttoncta">
+                    <a href="login.html" class="nav__linkk">
+                        <span class="btv">
+                            Login
+                        <span>
+                    </a>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    
+    <!-- main section -->
+    <section class="">
+        <div class="relative w-full h-[50vh] overflow-hidden shadow-xl">
+            <img src="img/events-main.jpeg" alt="" class="absolute top-0 left-0 w-full h-full object-cover">
+            <div class="absolute top-0 left-0 w-full h-full z-0 
+                        bg-gradient-to-b from-black/100 via-transparent to-black/100 
+                        flex items-center justify-center">
+            <h1 class="atas text-3xl sm:text-6xl font-bold text-white">Events</h1>
+            </div>
+        </div>
+    </section>
+    <!-- tab switch section -->
+    <section class="w-5/6 mx-auto mt-10 text-white">
+        <div class="flex justify-center gap-2 sm:gap-4 mb-8 flex-nowrap flex-wrap sm:flex-nowrap bawah">
+            <button class="tab-btn active-tab text-center bg-indigo-500 text-white font-semibold py-2 px-4 sm:py-3 px-6 rounded transition duration-300" data-tab="learn"><p class="font-body">Learn</p></button>
+            <button class="tab-btn text-center bg-indigo-500 text-white font-semibold py-2 px-4 sm:py-3 px-6 rounded transition duration-300" data-tab="collab"><p class="font-body">Collab</p></button>
+            <button class="tab-btn text-center bg-indigo-500 text-white font-semibold py-2 px-4 sm:py-3 px-6 rounded transition duration-300" data-tab="expo"><p class="font-body">Expo</p></button>
+        </div>
+
+        <div id="learn" class="tab-content grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bawah">
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/fea1.jpeg" alt="VR for Education" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR for Education</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Discover how VR is shaping the future of learning in this interactive webinar.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Entry</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/fea2.jpg" alt="Intro to VR Dev" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Intro to VR Development</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Learn the basics of building immersive VR apps — beginner-friendly workshop.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Seats Limited</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn4.jpg" alt="Virtual History Tours" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Virtual History Tours</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Walk through ancient civilizations and historic landmarks in VR.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Entry</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/events-main.jpeg" alt="VR for Science Labs" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR for Science Labs</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Experience virtual labs where students can experiment without limits.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Trial</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn5.jpg" alt="Teacher Training in VR" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Teacher Training in VR</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Professional development courses for educators using virtual classrooms.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Limited Seats</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn6.jpg" alt="Inclusive Learning Spaces" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Inclusive Learning Spaces</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">See how VR is supporting accessibility in diverse learning environments.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Access</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/loginbg.jpg" alt="VR Language Labs" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Language Labs</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Practice speaking new languages with real-time simulations and avatars.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Trial</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/why2.png" alt="Build Your First VR World" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Build Your First VR World</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Beginner course to create your own virtual experience using open tools.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Enroll Now</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/why1.png" alt="VR Safety & Ethics" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Safety & Ethics</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Understand responsible usage, safety protocols, and ethics in VR learning.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Guide</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="collab" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bawah">
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                    <img src="img/why3.png" alt="Future Tech Expo 2025" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                    <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Future Tech Expo 2025</h2>
+                    <p class="text-gray-400 text-sm line-clamp-2">Step into tomorrow with the latest breakthroughs in VR and sustainable tech.</p>
+                    <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                        <p class="text-white text-sm">Starts June 20</p>
+                        <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                            Details
+                            <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                    <img src="img/fea4.png" alt="VR Art Showcase" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                    <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Art Showcase</h2>
+                    <p class="text-gray-400 text-sm line-clamp-2">Explore immersive digital art and meet creators blending creativity with code.</p>
+                    <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                        <p class="text-white text-sm">Open Gallery</p>
+                        <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                            Details
+                            <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/loginbg.jpg" alt="VR Language Labs" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Language Labs</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Practice speaking new languages with real-time simulations and avatars.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Trial</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/why2.png" alt="Build Your First VR World" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Build Your First VR World</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Beginner course to create your own virtual experience using open tools.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Enroll Now</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/why1.png" alt="VR Safety & Ethics" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Safety & Ethics</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Understand responsible usage, safety protocols, and ethics in VR learning.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Guide</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/events-main.jpeg" alt="VR for Science Labs" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR for Science Labs</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Experience virtual labs where students can experiment without limits.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Trial</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn4.jpg" alt="Virtual History Tours" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Virtual History Tours</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Walk through ancient civilizations and historic landmarks in VR.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Entry</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn5.jpg" alt="Teacher Training in VR" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Teacher Training in VR</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Professional development courses for educators using virtual classrooms.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Limited Seats</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn6.jpg" alt="Inclusive Learning Spaces" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Inclusive Learning Spaces</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">See how VR is supporting accessibility in diverse learning environments.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Access</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="expo" class="tab-content hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bawah">
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                    <img src="img/fea5.png" alt="VR Art Showcase" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                    <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Echo x GreenWave</h2>
+                    <p class="text-gray-400 text-sm line-clamp-2">A joint mission to create meaningful impact using green VR tech.</p>
+                    <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                        <p class="text-white text-sm">Limited Tickets</p>
+                        <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                            Details
+                            <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                    <img src="img/why3.png" alt="Future Tech Expo 2025" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                    <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Future Tech Expo 2025</h2>
+                    <p class="text-gray-400 text-sm line-clamp-2">Step into tomorrow with the latest breakthroughs in VR and sustainable tech.</p>
+                    <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                        <p class="text-white text-sm">Starts June 20</p>
+                        <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                            Details
+                            <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                    <img src="img/fea4.png" alt="VR Art Showcase" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                    <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Art Showcase</h2>
+                    <p class="text-gray-400 text-sm line-clamp-2">Explore immersive digital art and meet creators blending creativity with code.</p>
+                    <div class="flex justify-between items-center pt-3 border-t border-indigo-500/20 mt-4 pt-3 flex justify-between items-center">
+                        <p class="text-white text-sm">Open Gallery</p>
+                        <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                            Details
+                            <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn5.jpg" alt="Teacher Training in VR" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Teacher Training in VR</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Professional development courses for educators using virtual classrooms.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Limited Seats</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn6.jpg" alt="Inclusive Learning Spaces" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Inclusive Learning Spaces</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">See how VR is supporting accessibility in diverse learning environments.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Access</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/events-main.jpeg" alt="VR for Science Labs" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR for Science Labs</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Experience virtual labs where students can experiment without limits.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Trial</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/learn4.jpg" alt="Virtual History Tours" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Virtual History Tours</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Walk through ancient civilizations and historic landmarks in VR.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Entry</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/why2.png" alt="Build Your First VR World" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">Build Your First VR World</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Beginner course to create your own virtual experience using open tools.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Enroll Now</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-black border-2 border-indigo-900 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition">
+                <div class="h-48 overflow-hidden border-b-2 border-indigo-900 rounded-t-2xl">
+                <img src="img/why1.png" alt="VR Safety & Ethics" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110" />
+                </div>
+                <div class="p-5 space-y-3">
+                <h2 class="text-white text-2xl font-body font-bold line-clamp-2">VR Safety & Ethics</h2>
+                <p class="text-gray-400 text-sm line-clamp-2">Understand responsible usage, safety protocols, and ethics in VR learning.</p>
+                <div class="flex justify-between items-center border-t border-indigo-500/20 pt-3 mt-4">
+                    <p class="text-white text-sm">Free Guide</p>
+                    <a href="eventdetail.html" class="inline-block text-indigo-400 hover:text-indigo-500 font-medium text-base group">
+                    Details <i class="fa-solid fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- button to top -->
+    <button id="toTopBtn"
+    class="fixed bottom-6 right-6 z-50 p-3 sm:p-4 bg-black/40 backdrop-blur-md border border-indigo-600
+            text-indigo-300 hover:text-white rounded-full shadow-md 
+            opacity-0 scale-90 translate-y-4 pointer-events-none transition-all duration-500 ease-in-out group"
+    aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up text-lg transition-transform duration-300 group-hover:-translate-y-1"></i>
+    </button>
+
+    <footer class="relative w-full bg-black text-gray-300 md:mt-[145px] mt-10 pb-8">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
+            style="background-image: url('img/footer.jpg'); z-index: 0;">
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-75 z-0"></div>
+        <div class="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent z-10"></div>
+
+        <div class="relative mx-auto w-5/6 mt-12 z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+            <div class="flex flex-col items-start">
+                <h2 class="text-xl font-bold text-white mb-4 ms-0 sm:ms-4">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logonav.png" alt="EchoTech Logo" class="w-48 h-auto">
+                </a>
+                </h2>
+                <p class="text-sm sm:text-base">
+                EchoTech is your gateway to sustainable future tech. Discover cutting-edge VR products built for a smarter and greener tomorrow.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Explore</h3>
+                <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-indigo-400 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-indigo-400 transition">About</a></li>
+                <li><a href="events.html" class="hover:text-indigo-400 transition">Events</a></li>
+                <li><a href="contactus.html" class="hover:text-indigo-400 transition">Contact Us</a></li>
+                <li><a href="marketplace.html" class="hover:text-indigo-400 transition">Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+                <p class="text-sm sm:text-base text-gray-300">
+                Subscribe to receive updates on our latest VR innovations and eco-tech campaigns.
+                </p>
+                <form class="mt-4">
+                <input type="email" placeholder="Your email address" required
+                    class="w-full p-2 border border-gray-600 bg-white text-black rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base" />
+                <button type="submit"
+                    class="w-full bg-indigo-500 hover:bg-indigo-950 transition-all text-white p-2 rounded mt-1 text-sm sm:text-base font-semibold">
+                    Subscribe
+                </button>
+                </form>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                <div class="flex space-x-4 text-2xl">
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 EchoTech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+    // tab switch
+    document.addEventListener("DOMContentLoaded", () => {
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            tabButtons.forEach((b) => b.classList.remove("active-tab"));
+            tabContents.forEach((content) => content.classList.add("hidden"));
+
+            btn.classList.add("active-tab");
+            const selected = btn.getAttribute("data-tab");
+            document.getElementById(selected).classList.remove("hidden");
+        });
+        });
+    });
+
+    // to top
+    document.addEventListener("DOMContentLoaded", function () {
+        const toTopBtn = document.getElementById("toTopBtn");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            toTopBtn.classList.remove(
+            "opacity-0",
+            "scale-90",
+            "translate-y-4",
+            "pointer-events-none"
+            );
+        } else {
+            toTopBtn.classList.add(
+            "opacity-0",
+            "scale-90",
+            "translate-y-4",
+            "pointer-events-none"
+            );
+        }
+        });
+
+        toTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+    </script>
+  </body>
+</html>

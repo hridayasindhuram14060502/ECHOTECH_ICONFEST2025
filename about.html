@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - EchoTech</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- css -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <header class="header" id="header">
+        <nav class="nav  mx-auto w-5/6">
+
+            <a href="index.html" class="nav__logo"><img src="img/logonav.png" alt=""></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">
+                            <span class="active">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="events.html" class="nav__link">
+                            <span>Events</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contactus.html" class="nav__link">
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="marketplace.html" class="nav__link">
+                            <span>Marketplace</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+
+            <div class="nav__tcta">
+                <div class="buttoncta">
+                    <a href="login.html" class="nav__linkk">
+                        <span class="btv">
+                            Login
+                        <span>
+                    </a>
+                </div>
+        
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <section class="">
+        <div class="relative w-full h-[50vh] overflow-hidden shadow-xl">
+            <img src="img/learn4.jpg" alt="" class="absolute top-0 left-0 w-full h-full object-cover">
+            <div class="absolute top-0 left-0 w-full h-full z-0 
+                        bg-gradient-to-b from-black/10 via-black/1 to-black/100 
+                        flex items-center justify-center">
+            <h1 class="atas text-3xl sm:text-6xl font-bold text-white">About</h1>
+            </div>
+        </div>
+    </section>
+    <!-- seccond section -->
+    <section class="w-5/6 mx-auto mt-10 text-white">
+        <div class="flex flex-col lg:flex-row gap-12 items-center lg:items-stretch">
+            
+            <div class="kiri w-full lg:w-1/2 flex flex-col justify-center">
+                <h2 class="text-indigo-400 text-lg font-medium font-body mb-2">Who We Are</h2>
+                <h1 class="text-3xl sm:text-4xl font-bold font-display mb-4">Powering a Greener Virtual Future</h1>
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed text-justify indent-8">
+                    EchoTech is a forward-thinking platform dedicated to revolutionizing how we experience technology. We blend innovation with sustainability to craft immersive VR experiences that are not only cutting-edge, but also environmentally conscious. Our goal is to reduce carbon footprints while unlocking new digital possibilities for education, collaboration, and exploration.
+                </p>
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed mt-4 text-justify indent-8">
+                    Whether you’re an educator, a tech enthusiast, or a changemaker, EchoTech empowers you to become part of a smarter, cleaner digital future. From interactive webinars and global collaborations to a sustainable tech marketplace, we are building a community that believes technology should do good—for people and the planet.
+                </p>
+
+                <div class="mt-6 flex flex-col sm:flex-row sm:justify-start items-center gap-4">
+                    <a href="events.html" 
+                        class="w-full sm:w-auto text-center bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded transition group">
+                        Explore Our Events
+                        <i class="fa-solid fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                    <a href="marketplace.html" 
+                        class="w-full sm:w-auto text-center bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded transition group">
+                        Visit Marketplace
+                        <i class="fa-solid fa-arrow-right ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        <div class="kanan w-full lg:w-1/2 grid grid-cols-2 gap-4 relative">
+            <div class="absolute top-0 left-0 w-full h-28 bg-gradient-to-b from-black/100 via-black/1 to-transparent z-10 pointer-events-none rounded-t-xl"></div>
+            <div class="col-span-1 row-span-2 relative overflow-hidden rounded-2xl shadow-xl group">
+                <img src="img/about1.jpg" alt="About EchoTech 1" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute top-0 left-0 w-full h-28 bg-gradient-to-b from-black/100 via-black/10 to-transparent z-10 pointer-events-none rounded-t-none"></div>
+            </div>
+
+            <div class="col-span-1 relative overflow-hidden rounded-2xl shadow-xl group">
+                <img src="img/about2.jpg" alt="About EchoTech 2" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute top-0 left-0 w-full h-28 bg-gradient-to-b from-black/100 via-black/10 to-transparent z-10 pointer-events-none rounded-t-none"></div>
+            </div>
+
+            <div class="col-span-1 relative overflow-hidden rounded-2xl shadow-xl group">
+                <img src="img/about3.jpg" alt="About EchoTech 3" class="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105" />
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- third section -->
+    <section class="w-5/6 mx-auto md:mt-[145px] mt-10 text-white relative">
+        <div class="atas text-center mb-16">
+            <h2 class="text-indigo-400 text-lg font-medium font-body mb-2">Our Core</h2>
+            <h1 class="text-3xl sm:text-4xl font-bold font-display tracking-wide">Vision & Mission</h1>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-stretch">
+
+            <div class="kiri bg-gradient-to-b from-black via-gray-900 to-gray-950 border-x border-b border-indigo-700 rounded-3xl p-8 shadow-xl hover:shadow-indigo-600/30 transition duration-300">
+                <h3 class="text-2xl font-semibold font-display text-indigo-300 mb-4">Our Vision</h3>
+                <p class="text-gray-300 text-sm sm:text-base leading-relaxed text-justify indent-6">
+                    To become a global pioneer in sustainable virtual reality, where technology not only drives innovation 
+                    but also preserves the planet. We envision a future where immersive digital experiences empower communities, 
+                    enhance education, and promote eco-conscious living.
+                </p>
+            </div>
+
+            <div class="kanan bg-gradient-to-b from-black via-gray-900 to-gray-950 border-x border-b border-indigo-700 rounded-3xl p-8 shadow-xl hover:shadow-indigo-600/30 transition duration-300">
+                <h3 class="text-2xl font-semibold font-display text-indigo-300 mb-4">Our Mission</h3>
+                <ol class="list-decimal pl-5 text-gray-300 text-sm sm:text-base space-y-3 marker:text-indigo-400">
+                    <li><span class="ml-2 block">Design immersive and energy-efficient VR technologies that contribute to global sustainability.</span></li>
+                    <li><span class="ml-2 block">Encourage eco-friendly digital behavior through community involvement and continuous innovation.</span></li>
+                    <li><span class="ml-2 block">Deliver platforms, tools, and experiences that inspire the adoption of green technology.</span></li>
+                    <li><span class="ml-2 block">Foster impactful partnerships that blend technological progress with environmental stewardship.</span></li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+    <!-- team section -->
+    <section class="w-5/6 mx-auto md:mt-[145px] mt-10 text-white space-y-10 font-body">
+
+        <div class="text-center">
+            <h2 class="text-indigo-400 text-lg font-medium mb-2">Meet the People Behind</h2>
+            <h1 class="text-4xl font-bold font-display">Our Team</h1>
+        </div>
+
+        <!-- 1 -->
+        <div class="kiri flex flex-col md:flex-row items-stretch overflow-hidden rounded-[30px] border border-indigo-700 bg-gradient-to-b from-[#0a0a0a] via-gray-900 to-[#111] shadow-xl hover:scale-[1.015] hover:shadow-indigo-600/40 transition-all duration-500 ease-in-out group min-h-[300px] mb-10">
+            <div class="md:w-1/3 w-full flex justify-center items-center bg-black/80">
+                <img src="img/testi1.png" alt="Alice Morgan" class="w-full max-h-[340px] object-cover object-top grayscale group-hover:grayscale-0 transition duration-500 ease-in-out" />
+            </div>
+            <div class="md:w-2/3 w-full px-8 py-6 flex flex-col justify-center">
+                <div class="text-indigo-400 text-sm font-semibold mb-1 tracking-wide">Lead Strategist</div>
+                <h3 class="text-2xl font-bold text-indigo-300 font-display mb-4">Alice Morgan</h3>
+                <p class="text-gray-300 leading-relaxed text-justify text-sm sm:text-base max-w-3xl mx-auto">
+                Alice has led cross-functional teams to deliver immersive VR environments in education and research. Her user-centric innovation approach drives impactful solutions in future learning ecosystems.
+                </p>
+                <div class="flex gap-5 mt-6">
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-x-twitter text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="kanan flex flex-col md:flex-row-reverse items-stretch overflow-hidden rounded-[30px] border border-indigo-700 bg-gradient-to-b from-[#0a0a0a] via-gray-900 to-[#111] shadow-xl hover:scale-[1.015] hover:shadow-indigo-600/40 transition-all duration-500 ease-in-out group min-h-[300px] mb-10">
+            <div class="md:w-1/3 w-full flex justify-center items-center bg-black/80">
+                <img src="img/testi2.png" alt="David Lee" class="w-full max-h-[340px] object-cover object-top grayscale group-hover:grayscale-0 transition duration-500 ease-in-out" />
+            </div>
+            <div class="md:w-2/3 w-full px-8 py-6 flex flex-col justify-center text-left md:text-right">
+                <div class="text-indigo-400 text-sm font-semibold mb-1 tracking-wide">Design Director</div>
+                <h3 class="text-2xl font-bold text-indigo-300 font-display mb-4">David Lee</h3>
+                <p class="text-gray-300 leading-relaxed text-justify text-sm sm:text-base max-w-3xl md:ml-auto md:mr-0 mx-auto">
+                David blends sustainability with accessibility in interface design. He has led award-winning AR/VR projects for nonprofits and education, enhancing usability and brand identity through immersive tech.
+                </p>
+                <div class="flex gap-5 mt-6 justify-start md:justify-end">
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-x-twitter text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="kiri flex flex-col md:flex-row items-stretch overflow-hidden rounded-[30px] border border-indigo-700 bg-gradient-to-b from-[#0a0a0a] via-gray-900 to-[#111] shadow-xl hover:scale-[1.015] hover:shadow-indigo-600/40 transition-all duration-500 ease-in-out group min-h-[300px]">
+            <div class="md:w-1/3 w-full flex justify-center items-center bg-black/80">
+                <img src="img/testi3.png" alt="Sophia Lin" class="w-full max-h-[340px] object-cover object-top grayscale group-hover:grayscale-0 transition duration-500 ease-in-out" />
+            </div>
+            <div class="md:w-2/3 w-full px-8 py-6 flex flex-col justify-center">
+                <div class="text-indigo-400 text-sm font-semibold mb-1 tracking-wide">Lead VR Developer</div>
+                <h3 class="text-2xl font-bold text-indigo-300 font-display mb-4">Sophia Lin</h3>
+                <p class="text-gray-300 leading-relaxed text-justify text-sm sm:text-base max-w-3xl mx-auto">
+                Sophia leads VR development projects focused on immersive learning experiences. Her expertise in real-time rendering and user-centric design bridges the gap between technology and education, advancing inclusive digital environments.
+                </p>
+                <div class="flex gap-5 mt-6">
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-x-twitter text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                <a href="#" class="text-indigo-400 hover:text-indigo-900 transition transform hover:scale-125 relative group">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-indigo-500 group-hover:w-full transition-all duration-300 ease-in-out"></span>
+                </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- button to top -->
+    <button id="toTopBtn"
+    class="fixed bottom-6 right-6 z-50 p-3 sm:p-4 bg-black/40 backdrop-blur-md border border-indigo-600
+            text-indigo-300 hover:text-white rounded-full shadow-md 
+            opacity-0 scale-90 translate-y-4 pointer-events-none transition-all duration-500 ease-in-out group"
+    aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up text-lg transition-transform duration-300 group-hover:-translate-y-1"></i>
+    </button>
+
+    <footer class="relative w-full bg-black text-gray-300 md:mt-[145px] mt-10 pb-8">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center bg-no-repeat"
+            style="background-image: url('img/footer.jpg'); z-index: 0;">
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-75 z-0"></div>
+        <div class="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black to-transparent z-10"></div>
+
+        <div class="relative mx-auto w-5/6 mt-12 z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+            <div class="flex flex-col items-start">
+                <h2 class="text-xl font-bold text-white mb-4 ms-0 sm:ms-4">
+                <a href="index.html" class="nav__logo">
+                    <img src="img/logonav.png" alt="EchoTech Logo" class="w-48 h-auto">
+                </a>
+                </h2>
+                <p class="text-sm sm:text-base">
+                EchoTech is your gateway to sustainable future tech. Discover cutting-edge VR products built for a smarter and greener tomorrow.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Explore</h3>
+                <ul class="space-y-2 text-sm">
+                <li><a href="index.html" class="hover:text-indigo-400 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-indigo-400 transition">About</a></li>
+                <li><a href="events.html" class="hover:text-indigo-400 transition">Events</a></li>
+                <li><a href="contactus.html" class="hover:text-indigo-400 transition">Contact Us</a></li>
+                <li><a href="marketplace.html" class="hover:text-indigo-400 transition">Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Stay Updated</h3>
+                <p class="text-sm sm:text-base text-gray-300">
+                Subscribe to receive updates on our latest VR innovations and eco-tech campaigns.
+                </p>
+                <form class="mt-4">
+                <input type="email" placeholder="Your email address" required
+                    class="w-full p-2 border border-gray-600 bg-white text-black rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base" />
+                <button type="submit"
+                    class="w-full bg-indigo-500 hover:bg-indigo-950 transition-all text-white p-2 rounded mt-1 text-sm sm:text-base font-semibold">
+                    Subscribe
+                </button>
+                </form>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                <div class="flex space-x-4 text-2xl">
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+            &copy; 2025 EchoTech. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toTopBtn = document.getElementById("toTopBtn");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+            toTopBtn.classList.remove(
+            "opacity-0",
+            "scale-90",
+            "translate-y-4",
+            "pointer-events-none"
+            );
+        } else {
+            toTopBtn.classList.add(
+            "opacity-0",
+            "scale-90",
+            "translate-y-4",
+            "pointer-events-none"
+            );
+        }
+        });
+
+        toTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+    </script>
+  </body>
+</html>
